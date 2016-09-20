@@ -37,11 +37,10 @@ body {
 a {
     text-decoration: none;
     color: #3771C8;
-}
 
-a:hover {
-    text-decoration: underline;
-    color: #2C5AA0;
+    &:hover {
+        color: rgb(62, 177, 89);
+    }
 }
 
 h1 {
@@ -58,6 +57,10 @@ h1 {
     color: #fff;
     padding: 1rem 1rem;
     margin: 0.5rem;
+
+    &:hover {
+        background-color: lighten($button-bg-color, 5%);
+    }
 }
 
 
