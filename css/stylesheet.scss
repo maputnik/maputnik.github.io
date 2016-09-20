@@ -1,8 +1,13 @@
+---
+---
 $gray-color: #242424;
-$light-color: rgb(49, 49, 49);
+$light-color: #313131;
 $base-font-family: Roboto, sans-serif;
+$base-font-size: 1.6rem;
+$base-line-height: 1.2em;
+$spacing: 1rem;
 
-$button-bg-coor: $light-color;
+$button-bg-color: $light-color;
 $text-color:       white;
 $background-color: $gray-color;
 
@@ -48,10 +53,10 @@ h1 {
 .button {
     font-family: $base-font-family;
     font-weight: bold;
-    font-size: 3rem;
-    background-color: $brand-color;
+    font-size: $base-font-size;
+    background-color: $button-bg-color;
     color: #fff;
-    padding: 0.5rem 3rem;
+    padding: 1rem 1rem;
     margin: 0.5rem;
 }
 
@@ -74,3 +79,4 @@ h1 {
 }
 
 @import "octocat";
+@import "header";

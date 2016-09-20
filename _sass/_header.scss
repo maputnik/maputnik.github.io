@@ -1,0 +1,30 @@
+.header {
+    width: 60rem;
+    margin: 0 auto;
+    margin-top: 2 * $spacing;
+
+    &__logo {
+        display: inline-block;
+        vertical-align: middle;
+        width: 15rem;
+
+        img {
+            max-width: 100%;
+        }
+
+    }
+
+    &__title {
+        display: inline-block;
+        vertical-align: middle;
+        width: 35rem;
+    }
+
+    &__actions {
+        margin-top: 2 * $spacing;
+
+        a {
+            display: inline-block;
+        }
+    }
+}
