@@ -20,11 +20,13 @@
         width: 35rem;
     }
 
+    &__link {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
     &__actions {
         margin-top: 2 * $spacing;
 
-        a {
-            display: inline-block;
-        }
     }
 }
