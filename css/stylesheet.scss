@@ -1,0 +1,76 @@
+$gray-color: #242424;
+$light-color: rgb(49, 49, 49);
+$base-font-family: Roboto, sans-serif;
+
+$button-bg-coor: $light-color;
+$text-color:       white;
+$background-color: $gray-color;
+
+/* BASE */
+html {
+    font-size: 62.5%;
+}
+
+html {
+  box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #3771C8;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2C5AA0;
+}
+
+h1 {
+    font-size: 4.8rem;
+    margin: 0.5rem auto;
+}
+
+/* Buttons */
+.button {
+    font-family: $base-font-family;
+    font-weight: bold;
+    font-size: 3rem;
+    background-color: $brand-color;
+    color: #fff;
+    padding: 0.5rem 3rem;
+    margin: 0.5rem;
+}
+
+
+// Add vendor prefixes
+@mixin vendor-prefix($name, $argument) {
+    -webkit-#{$name}: #{$argument};
+    -ms-#{$name}: #{$argument};
+    -moz-#{$name}: #{$argument};
+    -o-#{$name}: #{$argument};
+    #{$name}: #{$argument};
+}
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@import "octocat";
