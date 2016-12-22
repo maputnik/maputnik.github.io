@@ -1,7 +1,8 @@
-# Site settings
-title: Mapital
+title: Maputnik
 email: me@lukasmartinelli.ch
 description: Visual Map Editor for Mapbox GL
 baseurl: ""
-url: "http://mapital.org"
+url: "http://maputnik.com"
 markdown: kramdown
+gems:
+- jekyll-redirect-from
