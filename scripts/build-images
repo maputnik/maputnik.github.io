@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+mkdir -p .cache
+
+echo "Fetching favicons"
+wget https://github.com/maputnik/design/archive/master.zip -O .cache/master.zip
+unzip -o .cache/master.zip -d .cache/
+
+cp .cache/design-master/logos/favicon-152x152.png images/dist/favicon-152x152.png
+cp .cache/design-master/logos/favicon-16x16.png   .cache/favicon-16.png
+cp .cache/design-master/logos/favicon-32x32.png   .cache/favicon-32.png
+
+echo "Generating .ico"
+convert .cache/favicon-16x16.png .cache/favicon-32x32.png -background transparent images/dist/favicon.ico
+
+
+echo "Compressing images"
+mkdir -p .cache/screenshots
+cp images/_source/screenshots/{fiord_color,osm_liberty,positron}.jpg .cache/screenshots
+
+cd .cache/screenshots
+  files=`ls *.jpg`
+  for file in $files
+  do
+    convert $file -resize 584 $file.min
+    jpegtran -optimize -perfect "$file.min" > "../../images/dist/screenshots/$file"
+  done
+cd -
+
+convert images/_source/screenshots/ui.jpg -resize 1790 .cache/ui.jpg
+jpegtran -optimize -perfect .cache/ui.jpg > "images/dist/screenshots/ui.jpg"
