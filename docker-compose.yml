@@ -1,0 +1,22 @@
+version: '3.2'
+services:
+  web:
+    build: 
+      dockerfile: "Dockerfile"
+      context: "./"
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./:/code
+    working_dir: /code
+    command: jekyll serve --host 0.0.0.0 --watch --incremental
+  build-images:
+    build:
+      dockerfile: "Dockerfile"
+      context: "./"
+    volumes:
+      - ./:/code
+    working_dir: /code
+    command: ./scripts/build-images
+
+
