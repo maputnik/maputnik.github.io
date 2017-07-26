@@ -1,4 +1,4 @@
-# website
+# website
 The website for the maputnik editor
 
 
