@@ -12,6 +12,7 @@ cp .cache/design-master/logos/logo-white.svg      images/dist/logo-white.svg
 
 echo "Generating .ico"
 convert .cache/favicon-16x16.png .cache/favicon-32x32.png -background transparent images/dist/favicon.ico
+cp images/dist/favicon.ico favicon.ico
 
 
 echo "Compressing images"
