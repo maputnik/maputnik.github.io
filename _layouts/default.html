@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{{site.title}}</title>
+
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/dist/favicon-152.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&text=maputnik" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/website.css">
+
+  </head>
+  <body data-theme="{{page.theme | default: layout.theme | default: 'dark' }}">
+
+    <div class="space__bg">
+      <div class="space__bg__hdl"></div>
+    </div>
+
+
+    <div class="content">
+      {% include nav.html %}
+      {{content}}
+    </div>
+    {% include footer.html %}
+
+    <div class="space">
+      <div class="space__fg">
+        <div class="planet"></div>
+        <div class="planet"></div>
+        <div class="planet"></div>
+        <div class="planet"></div>
+        <div class="planet"></div>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    
+    <script type="text/javascript" src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js"></script>
+    <script type="text/javascript" src="/app.js"></script>
+  </body>
+</html>

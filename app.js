@@ -17,6 +17,14 @@ function debounce(func, wait, immediate) {
   };
 };
 
+/**
+ * Pseudo random number
+ */
+var seed = 0;
+function random() {
+  return Number('0.'+Math.sin(seed+=0.2).toString().substr(6))
+}
+
 if(hasRaf) {
   function _generateStars() {
     var containerEl = document.querySelector(".space__bg__hdl");
@@ -35,12 +43,12 @@ if(hasRaf) {
       var el = document.createElement("div");
       el.className = "star";
 
-      var size = Math.round(1+Math.random()*4);
+      var size = Math.round(1+random()*4);
 
       el.style.width  = size+"px";
       el.style.minHeight = size+"px";
-      el.style.left = Math.round(Math.random() * width) +"px";
-      el.style.top  = Math.round(Math.random() * height) +"px";
+      el.style.left = Math.round(random() * width) +"px";
+      el.style.top  = Math.round(random() * height) +"px";
       fragment.appendChild(el);
     }
 

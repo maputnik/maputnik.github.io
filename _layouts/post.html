@@ -1,0 +1,19 @@
+---
+layout: blog
+theme: light
+---
+{{ content }}
+
+<div class="byline">
+  <img class="byline__avatar" src="https://github.com/{{page.author}}.png?size=60">
+  <div class="byline__details">
+    <div>
+      Written by <a href="http://github.com/{{page.author}}">@{{page.author}}</a>
+    </div>
+    <div>
+      {{page.date | date_to_string}}
+    </div>
+  </div>
+   
+</div>
+

@@ -1,175 +1,115 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Maputnik</title>
 
-		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/dist/favicon-152.png" />
+<div class="main">
 
-    <link href="https://fonts.googleapis.com/css?family=Russo+One&text=maputnik" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/website.css">
-  </head>
-  <body>
-
-    <div class="space__bg">
-      <div class="space__bg__hdl"></div>
+  <section class="hero">
+    <div class="hero__title">
+      <div class="hero__logo">
+        {% include_relative images/dist/logo-white.svg %}
+      </div>
+      <h1>maputnik</h1>
+      <div class="hero__version hide">v1.0.2</div>
     </div>
-
-    <div class="main">
-      <nav class="nav">
-        <div class="nav__inner">
-          <div class="nav__toolbox">
-            <a href="http://maputnik.com/editor" class="button">Launch</a><!--
-            --><a href="https://github.com/maputnik/editor/wiki" class="button">Docs</a>
-          </div>
-        </div>
-      </nav>
-      <div class="space">
-        <div class="space__fg">
-          <div class="planet"></div>
-          <div class="planet"></div>
-          <div class="planet"></div>
-          <div class="planet"></div>
-          <div class="planet"></div>
-        </div>
-      </div>
-
-      <section class="hero">
-        <div class="hero__title">
-          <div class="hero__logo">
-            {% include_relative images/dist/logo-white.svg %}
-          </div>
-          <h1>maputnik</h1>
-          <div class="hero__version hide">v1.0.2</div>
-        </div>
-        <p>
-          Maputnik is a free visual style editor for maps targeted at developers and designers. 
-        </p>
-        <div class="hero-screen">
-          <div class="hero-screen__img"></div>
-        </div>
-      </section>
-
-      <div class="examples">
-        <div class="examples__inner">
-          <p class="examples__header">
-            Fully featured right out of the box
-          </p>
-          <div class="examples__items">
-            <div class="examples__item">
-              <svg viewBox="0 0 24 24">
-                <path fill="#000000" d="M6.2,2.44L18.1,14.34L20.22,12.22L21.63,13.63L19.16,16.1L22.34,19.28C22.73,19.67 22.73,20.3 22.34,20.69L21.63,21.4C21.24,21.79 20.61,21.79 20.22,21.4L17,18.23L14.56,20.7L13.15,19.29L15.27,17.17L3.37,5.27V2.44H6.2M15.89,10L20.63,5.26V2.44H17.8L13.06,7.18L15.89,10M10.94,15L8.11,12.13L5.9,14.34L3.78,12.22L2.37,13.63L4.84,16.1L1.66,19.29C1.27,19.68 1.27,20.31 1.66,20.7L2.37,21.41C2.76,21.8 3.39,21.8 3.78,21.41L7,18.23L9.44,20.7L10.85,19.29L8.73,17.17L10.94,15Z" />
-              </svg>
-              <div class="examples__item__title">
-                Cross platform
-              </div>
-              <p>
-                All you need is a browser, we aim to support any modern browser
-              </p>
-            </div>
-            <div class="examples__item">
-              <svg viewBox="0 0 24 24">
-                  <path fill="#000000" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
-                  </svg>
-              <div class="examples__item__title">
-                Github export
-              </div>
-              <p>
-                Export to an anonymous gist on github or to a flat file
-              </p>
-            </div>
-            <div class="examples__item">
-              <svg viewBox="0 0 24 24">
-                  <path fill="#000000" d="M18,4V3A1,1 0 0,0 17,2H5A1,1 0 0,0 4,3V7A1,1 0 0,0 5,8H17A1,1 0 0,0 18,7V6H19V10H9V21A1,1 0 0,0 10,22H12A1,1 0 0,0 13,21V12H21V4H18Z" />
-                  </svg>
-              <div class="examples__item__title">
-                Built in styles
-              </div>
-              <p>
-                Open source styles to use as a starting point for you're new creation
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="call-to-action">
-        <div class="call-to-action__inner">
-          <p>
-            Give it a try right now, no signup or download required
-          </p>
-          <p>
-            <a class="call-to-action__button" href="http://maputnik.com/editor">
-              Launch Maputnik!
-            </a>
-          </p>
-        </div>
-      </div>
-
-      <div class="showcase">
-        <div class="showcase__inner">
-          <p class="showcase__header">
-            Get started now by modifying a open source style from the community.
-          </p>
-          <div class="showcase__items">
-            <div class="showcase__item">
-              <a href="http://maputnik.com/editor?style=https://rawgit.com/openmaptiles/positron-gl-style/master/style.json">
-                <div class="showcase__item__img showcase__item__img--positron"></div>
-                <div class="showcase__item__title">
-                  Positron
-                </div>
-              </a>
-            </div>
-            <div class="showcase__item">
-              <a href="http://maputnik.com/editor?style=https://rawgit.com/lukasmartinelli/osm-liberty/gh-pages/style.json">
-                <div class="showcase__item__img showcase__item__img--osm-liberty"></div>
-                <div class="showcase__item__title">
-                  OSM Liberty
-                </div>
-              </a>
-            </div>
-            <div class="showcase__item">
-              <a href="http://maputnik.com/editor?style=https://rawgit.com/openmaptiles/fiord-color-gl-style/master/style.json">
-                <div class="showcase__item__img showcase__item__img--fiord-color"></div>
-                <div class="showcase__item__title">
-                  Fiord Color
-                </div>
-              </a>
-            </div>
-            <!-- <div class="showcase__item"></div> -->
-            <!-- <div class="showcase__item"></div> -->
-            <!-- <div class="showcase__item"></div> -->
-          </div>
-        </div>
-      </div>
-      <div class="footer">
-        <div class="footer__inner">
-          <ul class="footer__items footer__items--right">
-            <li>
-              Have fun mapping!
-            </li>
-          </ul>
-          <ul class="footer__items footer__items--left">
-            <li>
-              <a href="https://github.com/maputnik/editor">Github</a>
-            </li>
-            <li>
-              <a href="https://github.com/maputnik/editor/issues">Issue tracker</a>
-            </li>
-            <li>
-              <a href="https://www.kickstarter.com/projects/174808720/maputnik-visual-map-editor-for-mapbox-gl">Kickstarter</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
+    <p>
+      Maputnik is a free visual style editor for maps targeted at developers and designers. 
+    </p>
+    <div class="hero-screen">
+      <div class="hero-screen__img"></div>
     </div>
+  </section>
 
-    <!-- scripts -->
-    <script type="text/javascript" src="app.js"></script>
-  </body>
-</html>
+  <div class="examples">
+    <div class="examples__inner">
+      <p class="examples__header">
+      Fully featured right out of the box
+      </p>
+      <div class="examples__items">
+        <div class="examples__item">
+          <svg viewBox="0 0 24 24">
+            <path fill="#000000" d="M6.2,2.44L18.1,14.34L20.22,12.22L21.63,13.63L19.16,16.1L22.34,19.28C22.73,19.67 22.73,20.3 22.34,20.69L21.63,21.4C21.24,21.79 20.61,21.79 20.22,21.4L17,18.23L14.56,20.7L13.15,19.29L15.27,17.17L3.37,5.27V2.44H6.2M15.89,10L20.63,5.26V2.44H17.8L13.06,7.18L15.89,10M10.94,15L8.11,12.13L5.9,14.34L3.78,12.22L2.37,13.63L4.84,16.1L1.66,19.29C1.27,19.68 1.27,20.31 1.66,20.7L2.37,21.41C2.76,21.8 3.39,21.8 3.78,21.41L7,18.23L9.44,20.7L10.85,19.29L8.73,17.17L10.94,15Z" />
+          </svg>
+          <div class="examples__item__title">
+            Cross platform
+          </div>
+          <p>
+          All you need is a browser, we aim to support any modern browser
+          </p>
+        </div>
+        <div class="examples__item">
+          <svg viewBox="0 0 24 24">
+            <path fill="#000000" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+          </svg>
+          <div class="examples__item__title">
+            Github export
+          </div>
+          <p>
+          Export to an anonymous gist on github or to a flat file
+          </p>
+        </div>
+        <div class="examples__item">
+          <svg viewBox="0 0 24 24">
+            <path fill="#000000" d="M18,4V3A1,1 0 0,0 17,2H5A1,1 0 0,0 4,3V7A1,1 0 0,0 5,8H17A1,1 0 0,0 18,7V6H19V10H9V21A1,1 0 0,0 10,22H12A1,1 0 0,0 13,21V12H21V4H18Z" />
+          </svg>
+          <div class="examples__item__title">
+            Built in styles
+          </div>
+          <p>
+          Open source styles to use as a starting point for you're new creation
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="call-to-action">
+    <div class="call-to-action__inner">
+      <p>
+      Give it a try right now, no signup or download required
+      </p>
+      <p>
+      <a class="call-to-action__button" href="http://maputnik.com/editor">
+        Launch Maputnik!
+      </a>
+      </p>
+    </div>
+  </div>
+
+  <div class="showcase">
+    <div class="showcase__inner">
+      <p class="showcase__header">
+      Get started now by modifying a open source style from the community.
+      </p>
+      <div class="showcase__items">
+        <div class="showcase__item">
+          <a href="http://maputnik.com/editor?style=https://rawgit.com/openmaptiles/positron-gl-style/master/style.json">
+            <div class="showcase__item__img showcase__item__img--positron"></div>
+            <div class="showcase__item__title">
+              Positron
+            </div>
+          </a>
+        </div>
+        <div class="showcase__item">
+          <a href="http://maputnik.com/editor?style=https://rawgit.com/lukasmartinelli/osm-liberty/gh-pages/style.json">
+            <div class="showcase__item__img showcase__item__img--osm-liberty"></div>
+            <div class="showcase__item__title">
+              OSM Liberty
+            </div>
+          </a>
+        </div>
+        <div class="showcase__item">
+          <a href="http://maputnik.com/editor?style=https://rawgit.com/openmaptiles/fiord-color-gl-style/master/style.json">
+            <div class="showcase__item__img showcase__item__img--fiord-color"></div>
+            <div class="showcase__item__title">
+              Fiord Color
+            </div>
+          </a>
+        </div>
+        <!-- <div class="showcase__item"></div> -->
+        <!-- <div class="showcase__item"></div> -->
+        <!-- <div class="showcase__item"></div> -->
+      </div>
+    </div>
+  </div>
+</div>

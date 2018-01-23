@@ -64,6 +64,10 @@ body {
   background: rgb(30, 27, 44);
   overflow-x: hidden;
   position: relative;
+
+  &[data-theme='light'] {
+    background: white;
+  }
 }
 
 .planet:nth-child(2) {
@@ -154,7 +158,8 @@ body {
 .space {
   height: 122px;
   min-width: 560px;
-  position: relative;
+  position: absolute;
+  top: 0;
   left: 50%;
   transform: translate(-50%, 0);
 }
@@ -243,14 +248,27 @@ body {
 }
 
 .nav__toolbox {
-  float: right;
   padding: 0.8em 0.4em;
+  text-align: right;
 }
 
 .nav__inner {
   padding: 0.8em;
   margin: 0 auto;
   max-width: 940px;
+  display: flex;
+}
+
+.nav__logo {
+  flex: 1;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+
+  svg {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 .button {
@@ -262,12 +280,22 @@ body {
   text-decoration: none;
   margin-left: 0.4em;
   cursor: pointer;
+
+  *[data-theme="light"] & {
+    color: hsl(251, 24%, 14%);
+    background: #fefefe;
+  }
 }
 
 .button:hover {
   background: white;
   border-color: white;
   color: rgb(30, 27, 44);
+
+  *[data-theme="light"] & {
+    color: white;
+    background: rgb(30, 27, 44);
+  }
 }
 
 .footer {
@@ -275,6 +303,13 @@ body {
   background: hsla(251, 24%, 9%, 0.9);
   margin-top: 8em;
   color: hsl(0, 0%, 90%);
+
+  *[data-theme='light'] & {
+    background: white;
+    color: black;
+    border-color: #ccc;
+    border-top-style: dashed;
+  }
 }
 
 .footer__inner {
@@ -399,7 +434,6 @@ body {
 
 .main {
   position: relative;
-  overflow-x: hidden;
 }
 
 .hero-screen__inner {
@@ -582,4 +616,92 @@ body {
 
 .showcase__item__img--fiord-color {
   background-image: url('../images/dist/screenshots/fiord_color.jpg');
+}
+
+
+.star {
+  background: hsla(0, 0%, 85%, 1) !important;
+}
+
+*[data-theme='light'] {
+  .planet:nth-child(2) {
+    background: linear-gradient(to left, lighten(#c21500, 50%), lighten(#ffc500, 50%));
+  }
+
+  .planet:nth-child(1) {
+    background: linear-gradient(to left, lighten(#333399, 50%), lighten(#ff00cc, 50%));
+  }
+
+  .planet:nth-child(3) {
+    background: linear-gradient(to left, lighten(#5D4157, 50%) , lighten(#A8CABA, 50%));
+    display: none;
+  }
+
+  .planet:nth-child(4) {
+    background: linear-gradient(to left, lighten(#16222A, 50%) , lighten(#3A6073, 50%));
+  }
+
+  .planet:nth-child(5) {
+    background: linear-gradient(to left, lighten(#4B1248, 50%), lighten(#F0C27B, 50%));
+  }
+}
+
+.content {
+  z-index: 9;
+  position: relative;
+  min-height: 100vh;
+}
+
+.blog {
+  min-height: 100vh;
+
+
+
+  &__main {
+    max-width: 940px;
+    min-height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
+    padding: 16px;
+
+    li {
+      margin-bottom: 0.2em;
+    }
+  }
+
+  .header {
+    margin-top: 48px;
+  }
+
+  .header:after {
+    content: "";
+    display: block;
+    height: 3px;
+    background: black;
+    width: 60px;
+    margin-top: 32px;
+  }
+
+  .header__title {
+    font-size: 34px;
+    font-weight: 700;
+  }
+
+  .byline {
+    display: flex;
+    margin-top: 32px;
+  }
+
+  .byline__avatar {
+    border-radius: 2px;
+  }
+
+  .byline__details {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+    justify-content: flex-end;
+  }
 }
