@@ -4,6 +4,7 @@ description: Visual Map Editor for Mapbox GL
 url: "http://maputnik.com"
 markdown: kramdown
 future: true
+permalink: /blog/:categories/:year/:month/:day/:title
 gems:
 - jekyll-redirect-from
 layout_themes:

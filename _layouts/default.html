@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>{{site.title}}</title>
+    <title>
+      {{site.title}}
+      {% if page.title %}
+        - {{page.title}}
+      {% endif %}
+    </title>
 
 		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/dist/favicon-152.png" />
 
