@@ -1,0 +1,16 @@
+---
+layout: blog
+theme: light
+title: Blog
+---
+<p>
+  Here are some things we've written
+</p>
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <span class="date">{{post.date | date_to_string}}</span> &mdash;
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
