@@ -1,0 +1,21 @@
+---
+layout: default
+theme: light
+---
+<div class="donate">
+  <div class="donate__inner">
+    <div class="donate__message">
+      {% capture osm_donate_content %}{% include osm-donate.md %}{% endcapture %}
+      {{ osm_donate_content | markdownify }}
+    </div>
+
+
+    <div class="donate__donations">
+      <h2>Donations</h2>
+
+      <div class="donate__donations__list">
+        No donations yet...
+      </div>
+    </div>
+  </div>
+</div>
