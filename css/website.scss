@@ -705,3 +705,29 @@ body {
     justify-content: flex-end;
   }
 }
+
+blockquote {
+  margin: 0;
+  padding-left: 1em;
+  border-left: solid 3px #d0cce0;
+  overflow: hidden;
+}
+
+.donate {
+
+  &__inner {
+    max-width: 920px;
+    padding: 1.2em 0.8em;
+    margin: 0 auto;
+  }
+
+  &__donations {
+    margin-top: 64px;
+  }
+
+  &__donations__list {
+    border: solid 1px #eee;
+    border-radius: 2px;
+    padding: 8px;
+  }
+}
