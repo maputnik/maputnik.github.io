@@ -250,6 +250,7 @@ body {
 .nav__toolbox {
   padding: 0.8em 0.4em;
   text-align: right;
+  flex: 1;
 }
 
 .nav__inner {
@@ -257,18 +258,6 @@ body {
   margin: 0 auto;
   max-width: 940px;
   display: flex;
-}
-
-.nav__logo {
-  flex: 1;
-  width: 100px;
-  height: 100px;
-  display: inline-block;
-
-  svg {
-    width: 64px;
-    height: 64px;
-  }
 }
 
 .button {
