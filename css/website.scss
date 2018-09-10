@@ -2,6 +2,7 @@
 ---
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -719,4 +720,23 @@ blockquote {
     border-radius: 2px;
     padding: 8px;
   }
+}
+
+.disclaimer {
+  border-top: solid 1px hsla(251, 24%, 26%, 1);
+  background: hsla(251, 24%, 9%, 0.9);
+  color: hsl(0, 0%, 90%);
+
+  *[data-theme='light'] & {
+    background: white;
+    color: black;
+    border-color: #ccc;
+    border-top-style: dashed;
+  }
+}
+
+.disclaimer__inner {
+  padding: 1.2em 0.8em;
+  max-width: 940px;
+  margin: 0 auto;
 }
