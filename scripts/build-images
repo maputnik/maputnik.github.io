@@ -6,8 +6,8 @@ wget https://github.com/maputnik/design/archive/master.zip -O .cache/master.zip
 unzip -o .cache/master.zip -d .cache/
 
 cp .cache/design-master/logos/favicon-152x152.png images/dist/favicon-152x152.png
-cp .cache/design-master/logos/favicon-16x16.png   .cache/favicon-16.png
-cp .cache/design-master/logos/favicon-32x32.png   .cache/favicon-32.png
+cp .cache/design-master/logos/favicon-16x16.png   .cache/favicon-16x16.png
+cp .cache/design-master/logos/favicon-32x32.png   .cache/favicon-32x32.png
 cp .cache/design-master/logos/logo-white.svg      images/dist/logo-white.svg
 
 echo "Generating .ico"
@@ -17,7 +17,7 @@ cp images/dist/favicon.ico favicon.ico
 
 echo "Compressing images"
 mkdir -p .cache/screenshots
-cp images/_source/screenshots/{fiord_color,osm_liberty,positron}.jpg .cache/screenshots
+cp images/_source/screenshots/{toner,osm_liberty,positron}.jpg .cache/screenshots
 
 cd .cache/screenshots
   files=`ls *.jpg`
