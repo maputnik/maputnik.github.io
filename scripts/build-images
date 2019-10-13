@@ -17,7 +17,7 @@ cp images/dist/favicon.ico favicon.ico
 
 echo "Compressing images"
 mkdir -p .cache/screenshots
-cp images/_source/screenshots/{fiord_color,osm_liberty,positron}.jpg .cache/screenshots
+cp images/_source/screenshots/{toner,osm_liberty,positron}.jpg .cache/screenshots
 
 cd .cache/screenshots
   files=`ls *.jpg`
