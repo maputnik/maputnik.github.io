@@ -645,6 +645,10 @@ body {
 .blog {
   min-height: 100vh;
 
+  p img {
+    max-width: 100%;
+  }
+
 
 
   &__main {
@@ -681,6 +685,10 @@ body {
   .header__title {
     font-size: 34px;
     font-weight: 700;
+  }
+
+  .header__subtitle {
+    margin-top: 0.4em;
   }
 
   .byline {
