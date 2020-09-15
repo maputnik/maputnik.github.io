@@ -728,9 +728,42 @@ blockquote {
   }
 
   &__donations__list {
-    border: solid 1px #eee;
     border-radius: 2px;
-    padding: 8px;
+    position: relative;
+    overflow: hidden;
+
+    table {
+      width: 100%;
+      border: solid 1px #eee;
+      border-collapse: collapse;
+    }
+
+    @media(max-width: 539px) {
+      td:not(:first-child) {
+        border-left: solid 1px #ccc;
+      }
+      td {
+        padding: 8px;
+      }
+    }
+
+    @media(min-width: 540px) {
+      tr {
+        display: block;
+      }
+      tr:not(:first-child) {
+        border-top: solid 2px #aaa;
+      }
+
+      td:not(:first-child) {
+        border-top: solid 1px #eee;
+      }
+
+      td {
+        display: block;
+        padding: 8px;
+      }
+    }
   }
 }
 
