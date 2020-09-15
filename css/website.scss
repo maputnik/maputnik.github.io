@@ -738,7 +738,7 @@ blockquote {
       border-collapse: collapse;
     }
 
-    @media(max-width: 539px) {
+    @media(min-width: 540px) {
       td:not(:first-child) {
         border-left: solid 1px #ccc;
       }
@@ -747,7 +747,7 @@ blockquote {
       }
     }
 
-    @media(min-width: 540px) {
+    @media(max-width: 539px) {
       tr {
         display: block;
       }
