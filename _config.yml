@@ -1,12 +1,13 @@
 title: Maputnik
 email: me@lukasmartinelli.ch
-description: Visual Map Editor for Mapbox GL
+description: Visual Map Editor for MapLibre Styles
 baseurl: ""
 url: "http://maputnik.github.io"
 markdown: kramdown
 permalink: /blog/:categories/:year/:month/:day/:title
-gems:
+plugins:
 - jekyll-redirect-from
+- kramdown-parser-gfm
 layout_themes:
   post: light
   posts: light
